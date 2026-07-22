@@ -37,7 +37,7 @@ pip install -e .
 ## Quick start
 
 ```python
-from counterfactual_spatial_cvae import (
+from RECAST import (
     CounterfactualSpatialCVAE,
     prepare_paired_anndata,
     preset_dlpfc_sim_baseline,
