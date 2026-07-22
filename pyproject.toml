@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recast"
+version = "0.1.0"
+description = "RECAST: paired spatial counterfactual conditional VAE for spatial transcriptomics"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "labiip" }]
+dependencies = [
+    "numpy",
+    "torch",
+    "anndata",
+    "scanpy",
+    "scipy",
+    "pandas",
+    "tqdm",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+slat = []  # install scSLAT separately: https://github.com/zhanglabtools/scSLAT
+notebooks = [
+    "jupyter",
+    "ipywidgets",
+]
+
+[project.urls]
+Homepage = "https://github.com/labiip/RECAST"
+Repository = "https://github.com/labiip/RECAST"
+
+[tool.setuptools.packages.find]
+include = ["RECAST*"]
